@@ -7,11 +7,16 @@ public class Piramide {
 
             System.out.println(" ");
 
-            for (int j = 0; j < i + 1; j++) {
+            for (int j = 0; j < 4 - i - 1; j++) {
 
                 System.out.print(" ");
 
-                System.out.print("*");
+            }
+
+            for (int k = 0; k < 1 * i + 1; k++) {
+
+                System.out.print("* ");
+
             }
         }
     }
