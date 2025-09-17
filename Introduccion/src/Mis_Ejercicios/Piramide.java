@@ -1,7 +1,5 @@
 package Mis_Ejercicios;
 
-import java.util.Arrays;
-
 public class Piramide {
     public static void main(String[] args) {
 
