@@ -12,6 +12,8 @@ public class Piramide {
 
             for (int k = 0; k < 1 + i; k++) {
                 System.out.print("* ");
+
+                //este comentario debe aprecer en casa
             }
         }
     }
