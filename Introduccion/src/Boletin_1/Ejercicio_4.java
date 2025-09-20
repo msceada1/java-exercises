@@ -50,5 +50,7 @@ public class Ejercicio_4 {
         } else {
             System.out.println("ganaste");
         }
+
+        scanner.close();
     }
 }
