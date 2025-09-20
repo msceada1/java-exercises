@@ -5,7 +5,6 @@ import utils.MiEntradaSalida;
 import java.util.Scanner;
 
 public class Ejercicio_2 {
-
     /*
     Realizar un programa que solicite dos números, base y exponente, enteros
     positivos (incluido el 0), y que calcule la potencia (base elevado a
@@ -15,22 +14,19 @@ public class Ejercicio_2 {
 
     public static void main(String[] args) {
 
-        //se introducen los datos utilizando la clase MiEntradaSalida.
-
+        //definicion de variables
         int base = MiEntradaSalida.solicitarEnteroPositivo("Introduce la base, recuerda que debe ser entero positivo");
         int exponente = MiEntradaSalida.solicitarEnteroPositivo("Introduce el exponente, recuerda que debe ser entero positivo");
         int resultado = 1;
-        //procesamiento
 
+        //procesamiento
         if (exponente == 0) {
             System.out.println("cualquier numero con exponente 0 es 1");
         } else {
-
             for (int i = 0; i < exponente; i++) {
                 resultado *= base;
             }
             System.out.println("resultado = " + resultado);
         }
-
     }
 }
