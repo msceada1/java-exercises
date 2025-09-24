@@ -15,14 +15,22 @@ public class Ejercicio_7 {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("introduce 5 numeros");
-        int num1 = scanner.nextInt();
-        int num2 = scanner.nextInt();
-        int num3 = scanner.nextInt();
-        int num4 = scanner.nextInt();
-        int num5 = scanner.nextInt();
-        double media = (num1 + num2 + num3 + num4 + num5) / 5;
+        System.out.println("cuantos numeros desea introducir?");
+        double numerosAIntroducir = scanner.nextDouble();
+        double numero;
+        double suma = 0;
+
+        for (int i = 0; i < numerosAIntroducir; i++) {
+            System.out.printf("Introduce el numero " + (i + 1) + " : ");
+            numero = scanner.nextDouble();
+
+            suma += numero;
+        }
+
+        double media = suma / numerosAIntroducir;
 
         System.out.println("media = " + media);
+
+        scanner.close();
     }
 }

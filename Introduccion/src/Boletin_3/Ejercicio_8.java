@@ -15,9 +15,29 @@ public class Ejercicio_8 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        char respuesta1 = 'S';
-        char respuesta2 = 'N';
 
+        System.out.println("introduce un numero");
+        int numero = scanner.nextInt();
 
+        int numeroMenor = numero;
+        String respuesta;
+
+        do {
+            do {
+                System.out.println("Desea introducir mas numeros?");
+                respuesta = scanner.next();
+            } while (!respuesta.equalsIgnoreCase("S") && !respuesta.equalsIgnoreCase("N"));
+
+            if (respuesta.equalsIgnoreCase("S")) {
+                System.out.println("introduce otro numero");
+                numero = scanner.nextInt();
+            }
+
+            if (numero < numeroMenor) {
+                numeroMenor = numero;
+            }
+        } while (!respuesta.equalsIgnoreCase("N"));
+
+        System.out.println("numeroMenor = " + numeroMenor);
     }
 }
