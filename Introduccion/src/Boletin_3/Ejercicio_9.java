@@ -24,13 +24,13 @@ public class Ejercicio_9 {
             numero = scanner.nextInt();
         } while (numero < 0);
 
-        for (int i = 1; i < numero; i++) {
+        for (int i = 1; i <= numero / 2; i++) {
             if (numero % i == 0) {
                 suma += i;
             }
         }
 
-        if (suma == numero){
+        if (suma == numero) {
             perfecto = true;
         }
         System.out.println("perfecto = " + perfecto);

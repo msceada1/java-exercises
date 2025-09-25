@@ -11,6 +11,23 @@ public class Ejercicio_4 {
 
     public static void main(String[] args) {
 
+        /*
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("introduce un numero");
+        int numero = scanner.nextInt();
+        int comprobar = 2
+
+        while (comprobar <= num / 2 && num % comprobar != 0) {
+            comprobar++;
+        }
+        if (num % comprobar == 0){
+        sout ln ("el primer divisor de:  " + numero " es " + comprobar)
+        } else {
+        sout ln ("el numero %d es primo", numero)
+        }
+
+         */
+
         Scanner scanner = new Scanner(System.in);
         int numero;
         int num1 = 0;
@@ -25,5 +42,7 @@ public class Ejercicio_4 {
         }
         System.out.println("numero = " + num1);
         scanner.close();
+
+
     }
 }

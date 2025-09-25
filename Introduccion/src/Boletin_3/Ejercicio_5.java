@@ -14,7 +14,17 @@ public class Ejercicio_5 {
 
         Scanner scanner = new Scanner(System.in);
         int contadorPositivos = 0;
-        int numero;
+
+        System.out.println("introduce numeros, negativo para terminar el programa");
+        int numero = scanner.nextInt();
+
+        while (numero >= 0) {
+            numero = scanner.nextInt();
+            contadorPositivos++;
+        }
+        System.out.println("contadorPositivos = " + contadorPositivos);
+
+        /*
 
         do {
             System.out.println("introduce una lista de numeros. negativo para terminar");
@@ -26,5 +36,6 @@ public class Ejercicio_5 {
 
         System.out.println("contadorPositivos = " + contadorPositivos);
         scanner.close();
+        */
     }
 }
