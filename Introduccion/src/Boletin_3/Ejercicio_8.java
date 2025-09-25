@@ -18,18 +18,17 @@ public class Ejercicio_8 {
 
         System.out.println("introduce un numero");
         int numero = scanner.nextInt();
-
         int numeroMenor = numero;
         String respuesta;
 
         do {
             do {
-                System.out.println("Desea introducir mas numeros?");
+                System.out.println("desea introducir mas numeros (S/N)?");
                 respuesta = scanner.next();
             } while (!respuesta.equalsIgnoreCase("S") && !respuesta.equalsIgnoreCase("N"));
 
             if (respuesta.equalsIgnoreCase("S")) {
-                System.out.println("introduce otro numero");
+                System.out.println("introduce el siguiente numero");
                 numero = scanner.nextInt();
             }
 
