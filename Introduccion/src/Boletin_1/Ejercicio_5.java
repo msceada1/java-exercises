@@ -13,7 +13,7 @@ public class Ejercicio_5 {
 
         //variables
         int numero = MiEntradaSalida.solicitarEnteroPositivo("introduce un numero entero positivo");
-        boolean primo = false;
+        boolean primo = true;
 
         //procesamiento
         if (numero == 0) {
@@ -22,9 +22,8 @@ public class Ejercicio_5 {
             System.out.println("1 no es primo por definicion");
         } else {
             for (int i = 2; i < numero; i++) {
-                int resultado = numero % i;
-                if (resultado == 0){
-                    primo = true;
+                if (numero % i == 0) {
+                    primo = false;
                 }
             }
             System.out.println("primo = " + primo);
