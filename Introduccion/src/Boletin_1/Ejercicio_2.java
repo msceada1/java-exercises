@@ -2,8 +2,6 @@ package Boletin_1;
 
 import utils.MiEntradaSalida;
 
-import java.util.Scanner;
-
 public class Ejercicio_2 {
     /*
     Realizar un programa que solicite dos números, base y exponente, enteros
@@ -15,16 +13,22 @@ public class Ejercicio_2 {
     public static void main(String[] args) {
 
         //definicion de variables
-        int base = MiEntradaSalida.solicitarEnteroPositivo("Introduce la base, recuerda que debe ser entero positivo");
-        int exponente = MiEntradaSalida.solicitarEnteroPositivo("Introduce el exponente, recuerda que debe ser entero positivo");
+        int base = MiEntradaSalida.solicitarEntero("Introduce la base, recuerda que debe ser entero positivo");
+        int exponente = MiEntradaSalida.solicitarEntero("Introduce el exponente, recuerda que debe ser entero positivo");
         int resultado = 1;
 
         //procesamiento
         if (exponente == 0) {
             System.out.println("cualquier numero con exponente 0 es 1");
+        } else if (base == 0) {
+            System.out.println("resultado = 0");
         } else {
-            for (int i = 0; i < exponente; i++) {
+            for (int i = 0; i < Math.abs(exponente); i++) {
                 resultado *= base;
+            }
+
+            if (exponente < 0) {
+                resultado = -resultado;
             }
             System.out.println("resultado = " + resultado);
         }
