@@ -23,9 +23,11 @@ public class Ejercicio_6 {
         int producto = num1 * num2;
         int suma = 0;
 
-        for (int i = 0; i < num2; i++) {
+        for (int i = 0; i < Math.abs(num2); i++) {
             suma += num1;
         }
+
+        if (num2 < 0) producto = -producto;
 
         System.out.println("producto = " + producto);
         System.out.println("suma = " + suma);
