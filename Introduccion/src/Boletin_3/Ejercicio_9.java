@@ -1,5 +1,7 @@
 package Boletin_3;
 
+import utils.MiEntradaSalida;
+
 import java.util.Scanner;
 
 public class Ejercicio_9 {
@@ -13,16 +15,9 @@ public class Ejercicio_9 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-
         boolean perfecto = false;
-        int numero;
         int suma = 0;
-
-        do {
-            System.out.println("introduce un numero positivo");
-            numero = scanner.nextInt();
-        } while (numero < 0);
+        int numero = MiEntradaSalida.solicitarEnteroPositivo("Introduce un numero positivo");
 
         for (int i = 1; i <= numero / 2; i++) {
             if (numero % i == 0) {

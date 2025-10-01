@@ -13,24 +13,26 @@ public class Ejercicio_2 {
     public static void main(String[] args) {
 
         //definicion de variables
-        int base = MiEntradaSalida.solicitarEntero("Introduce la base, recuerda que debe ser entero positivo");
-        int exponente = MiEntradaSalida.solicitarEntero("Introduce el exponente, recuerda que debe ser entero positivo");
-        int resultado = 1;
+        int base = MiEntradaSalida.solicitarEntero("Introduce la base");
+        int exponente = MiEntradaSalida.solicitarEntero("Introduce el exponente");
+        int acumulador = 1;
 
         //procesamiento
-        if (exponente == 0) {
-            System.out.println("cualquier numero con exponente 0 es 1");
+        if (exponente == 0 && base == 0) {
+            System.out.println("0 elevado a 0 no es calculable");
         } else if (base == 0) {
             System.out.println("resultado = 0");
+        } else if (exponente == 1) {
+            System.out.println("cualquier numero elevado a 0 da como resultado 1");
         } else {
             for (int i = 0; i < Math.abs(exponente); i++) {
-                resultado *= base;
+                acumulador *= base;
             }
 
             if (exponente < 0) {
-                resultado = -resultado;
+                acumulador = -acumulador;
             }
-            System.out.println("resultado = " + resultado);
+            System.out.println("resultado = " + acumulador);
         }
     }
 }

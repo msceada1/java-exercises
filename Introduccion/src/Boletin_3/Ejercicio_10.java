@@ -1,6 +1,6 @@
 package Boletin_3;
 
-import java.util.Scanner;
+import utils.MiEntradaSalida;
 
 public class Ejercicio_10 {
 
@@ -12,26 +12,18 @@ public class Ejercicio_10 {
 
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
 
-        int numero;
-        int resultado = 1;
-
-        do {
-            System.out.println("introduce un numero postivo");
-            numero = scanner.nextInt();
-        } while (numero < 0);
+        int numero = MiEntradaSalida.solicitarEnteroPositivo("Introduce un numero mayor o igual a 0");
+        int acumulador = 1;
 
         if (numero == 0) {
             System.out.println("el factorial de 0 es 1 por definicion matematica");
         } else {
-            for (int i = numero; i > 0 ; i--) {
-                resultado *= i;
+            for (int i = numero; i > 1; i--) {
+                acumulador *= i;
             }
-            System.out.println("resultado = " + resultado);
+            System.out.println("resultado = " + acumulador);
         }
-
-        scanner.close();
 
     }
 }
