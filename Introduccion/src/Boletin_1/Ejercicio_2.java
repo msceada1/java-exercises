@@ -22,7 +22,7 @@ public class Ejercicio_2 {
             System.out.println("0 elevado a 0 no es calculable");
         } else if (base == 0) {
             System.out.println("resultado = 0");
-        } else if (exponente == 1) {
+        } else if (exponente == 0) {
             System.out.println("cualquier numero elevado a 0 da como resultado 1");
         } else {
             for (int i = 0; i < Math.abs(exponente); i++) {
