@@ -24,7 +24,7 @@ public class Ejercicio_6 {
 
         //procesamiento
         for (int i = 0; i < ALUMNOS_CLASE; i++) {
-            System.out.println("introduce la nota del alumno " + i + " entre 0 y 10");
+            System.out.println("introduce la nota del alumno " + (i + 1) + " entre 0 y 10");
             nota = scanner.nextFloat();
             while (nota > 10 || nota < 0) {
                 System.out.println("la nota del alumno " + i + " debe estar entre 0 y 10, por favor introduzca de nuevo");
@@ -41,10 +41,10 @@ public class Ejercicio_6 {
 
         System.out.println("suspensos = " + suspensos);
 
-        double porcentajeAProbados = (aprobados / ALUMNOS_CLASE) * 100;
+        double porcentajeAProbados = ((double) aprobados / ALUMNOS_CLASE) * 100;
         System.out.println("porcentajeAProbados = " + porcentajeAProbados + " %");
 
-        double porcentajeSuspensos = (suspensos / ALUMNOS_CLASE) * 100;
+        double porcentajeSuspensos = ((double) suspensos / ALUMNOS_CLASE) * 100;
         System.out.println("porcentajeSuspensos = " + porcentajeSuspensos + " %");
     }
 }

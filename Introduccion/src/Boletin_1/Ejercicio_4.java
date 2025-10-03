@@ -52,5 +52,24 @@ public class Ejercicio_4 {
         }
 
         scanner.close();
+
+        /*
+
+        int numero = 11;
+        int numero2 = 6;
+        int resultado = generaAleatrio(numero, numero2);
+        System.out.println("resultado = " + resultado);
+
+        */
     }
+
+    /*
+    public static int generaAleatrio(int numMax, int numMin) {
+
+        int numAleatorio = (int) (Math.random() * (numMax - numMin) + numMin);
+
+        return numAleatorio;
+    }
+    */
+
 }

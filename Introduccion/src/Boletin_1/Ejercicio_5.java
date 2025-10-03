@@ -12,16 +12,21 @@ public class Ejercicio_5 {
     public static void main(String[] args) {
 
         //variables
-        int numero = MiEntradaSalida.solicitarEnteroPositivo("introduce un numero entero positivo");
+        int numero = MiEntradaSalida.solicitarEntero("introduce un numero entero positivo");
         boolean primo = true;
 
         //procesamiento
         if (numero == 0) {
             System.out.println("0 no es valido");
+
         } else if (numero == 1) {
             System.out.println("1 no es primo por definicion");
+
+        } else if (numero < 0) {
+            System.out.println("los numeros negativos no se consideran primos");
+
         } else {
-            for (int i = 2; i < numero; i++) {
+            for (int i = 2; i <= numero / 2 && primo; i++) {
                 if (numero % i == 0) {
                     primo = false;
                 }
