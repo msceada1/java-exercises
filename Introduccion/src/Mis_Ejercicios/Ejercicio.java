@@ -6,35 +6,36 @@ public class Ejercicio {
 
     public static void main(String[] args) {
 
-        int resultado;
-        int resultado2;
-        int suma = 0;
-        int suma2 = 0;
-        int numero = MiEntradaSalida.solicitarEnteroEnRango("introduce un numero entre 0 y 10", 1, 10);
+        int numero = MiEntradaSalida.solicitarEnteroPositivoMayorQueCero("Introduce un numero mayor que cero");
+        int acumulador = 0;
+        int acumulaPares = 0;
+        int acumulaImpares = 0;
 
-        for (int i = 1; i <= 12; i++) {
-            resultado = numero * i;
-            System.out.println(numero + " * " + i + " = " + resultado);
-
-            suma += resultado;
-        }
-        System.out.println("suma = " + suma);
-
-        int promedio = suma / 11;
-        System.out.println("promedio = " + promedio);
-
-        System.out.println("------------------------");
-
-        for (int i = 12; i >= 1; i--) {
-            resultado2 = numero * i;
-
-            System.out.println(numero + " * " + i + " = " + resultado2);
-            suma2 += resultado2;
+        for (int i = 1; i <= numero; i++) {
+            acumulador += i;
+            System.out.printf(i + " + ");
+            if (i % 2 == 0) {
+                acumulaPares += i;
+            } else {
+                acumulaImpares += i;
+            }
         }
 
-        System.out.println("suma2 = " + suma2);
+        System.out.println("\n numero = " + numero);
 
-        int promedio2 = suma2 / 11;
-        System.out.println("promedio2 = " + promedio2);
+        System.out.println("acumulador = " + acumulador);
+
+        System.out.println("acumulaPares = " + acumulaPares);
+
+        System.out.println("acumulaImpares = " + acumulaImpares);
+
+        double media = (double) acumulador / numero;
+        System.out.println("media = " + media);
+
+        if (acumulador % 2 == 0) {
+            System.out.println("la suma total es par");
+        } else {
+            System.out.println("La suma total es impar");
+        }
     }
 }
