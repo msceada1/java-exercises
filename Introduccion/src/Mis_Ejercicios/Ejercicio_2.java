@@ -34,9 +34,7 @@ public class Ejercicio_2 {
             if (numero % 3 == 0) {
                 System.out.println("el numero " + numero + " es multiplo de 3");
             }
-            if (numero >= 0) {
-                ultimoPositivo = numero;
-            }
+            ultimoPositivo = numero;
             numero = MiEntradaSalida.solicitarEntero("Introduzca un numero, negativo para terminar");
             if (numero > 0) {
                 suma += numero;
