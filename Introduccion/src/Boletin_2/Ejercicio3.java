@@ -46,9 +46,6 @@ public class Ejercicio3 {
                 case V -> valor = VALOR_V;
                 case I -> valor = VALOR_I;
             }
-
-
         }
-
     }
 }
