@@ -27,7 +27,7 @@ public class Ejercicio3 {
 
         Scanner scanner = new Scanner(System.in);
 
-        int suma = 0, resta = 0, resultado = 0, valor = 0;
+        int suma = 0, resta = 0, valor = 0;
         String letra;
 
         System.out.println("cuantas letras desea introducir");
@@ -46,6 +46,11 @@ public class Ejercicio3 {
                 case V -> valor = VALOR_V;
                 case I -> valor = VALOR_I;
             }
+
+            if (valor >= valor) {
+                suma += valor;
+            } else suma -= resta;
         }
+        System.out.println("suma = " + suma);
     }
 }
