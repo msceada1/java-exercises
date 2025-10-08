@@ -2,7 +2,7 @@ package Boletin_1;
 
 import java.util.Scanner;
 
-public class Ejercicio_4 {
+public class Ejercicio4 {
     /*
     Se desea realizar un programa que implemente un juego que consiste en
     acertar un número secreto. El ordenador deberá generar aleatoriamente un

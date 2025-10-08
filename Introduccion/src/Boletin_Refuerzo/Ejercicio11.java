@@ -5,7 +5,7 @@ package Boletin_Refuerzo;
  * pantalla.
  */
 
-public class Ejercicio_11 {
+public class Ejercicio11 {
 
     /**
      * @param array array que espera una longitud por parametros

@@ -2,7 +2,7 @@ package Boletin_1;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_1 {
+public class Ejercicio1 {
 
     /**
      * Realizar un programa que solicite 3 números cualesquiera y los muestre por

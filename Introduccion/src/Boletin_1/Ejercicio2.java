@@ -2,7 +2,7 @@ package Boletin_1;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_2 {
+public class Ejercicio2 {
     /*
     Realizar un programa que solicite dos números, base y exponente, enteros
     positivos (incluido el 0), y que calcule la potencia (base elevado a

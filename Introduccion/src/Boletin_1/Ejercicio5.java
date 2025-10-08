@@ -2,7 +2,7 @@ package Boletin_1;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_5 {
+public class Ejercicio5 {
 
     /*
     Realizar un programa que solicite un número e informe de si es o no primo.

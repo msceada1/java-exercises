@@ -2,7 +2,7 @@ package Boletin_3;
 
 import java.util.Scanner;
 
-public class Ejercicio_4 {
+public class Ejercicio4 {
     /*
     Realizar un programa que lea un número estrictamente positivo N y
     muestre la suma de los N primeros números. Diseña el programa de forma

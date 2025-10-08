@@ -2,7 +2,7 @@ package Boletin_2;
 
 import java.util.Scanner;
 
-public class Ejercicio_3 {
+public class Ejercicio3 {
 
     //Declaracion de constantes valores enteros
     private static final int VALOR_M = 1000;

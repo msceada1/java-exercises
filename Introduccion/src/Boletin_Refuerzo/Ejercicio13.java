@@ -1,5 +1,5 @@
 package Boletin_Refuerzo;
 
-public class Ejercicio_13 {
+public class Ejercicio13 {
 
 }

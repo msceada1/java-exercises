@@ -2,7 +2,7 @@ package Boletin_1;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_7 {
+public class Ejercicio7 {
 
     /*
     Realizar un programa que solicite dos números enteros mayores que 0, que

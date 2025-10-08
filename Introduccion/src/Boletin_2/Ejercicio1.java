@@ -2,7 +2,7 @@ package Boletin_2;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_1 {
+public class Ejercicio1 {
 
     /*
     Realizar un programa que, dado un número introducido por el usuario, calcule su
@@ -18,7 +18,7 @@ public class Ejercicio_1 {
         while (num > 0) {
             int resto = num % 10;
             reverso = (reverso * 10) + resto;
-            num = num / 10;
+            num /= 10;
         }
 
         System.out.println("reverso = " + reverso);

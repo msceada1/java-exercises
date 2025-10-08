@@ -2,7 +2,7 @@ package Boletin_1;
 
 import java.util.Scanner;
 
-public class Ejercicio_8 {
+public class Ejercicio8 {
 
     /*
     Realizar un programa que calcule las soluciones de una ecuación de

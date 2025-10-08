@@ -2,7 +2,7 @@ package Boletin_1;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_3 {
+public class Ejercicio3 {
     /*
     Realizar un programa que solicite un número entero y determine el número
     de cifras que tiene dicho número.

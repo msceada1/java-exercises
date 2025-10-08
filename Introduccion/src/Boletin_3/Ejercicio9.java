@@ -2,9 +2,7 @@ package Boletin_3;
 
 import utils.MiEntradaSalida;
 
-import java.util.Scanner;
-
-public class Ejercicio_9 {
+public class Ejercicio9 {
 
     /*
     Realizar un programa que lea un número entero positivo y averigüe si es

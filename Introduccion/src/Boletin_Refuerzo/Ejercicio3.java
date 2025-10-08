@@ -2,7 +2,7 @@ package Boletin_Refuerzo;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_3 {
+public class Ejercicio3 {
 
     /**
      * Crea un programa que convierta un número decimal a binario.

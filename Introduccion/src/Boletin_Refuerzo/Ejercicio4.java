@@ -1,8 +1,6 @@
 package Boletin_Refuerzo;
 
-import utils.MiEntradaSalida;
-
-public class Ejercicio_4 {
+public class Ejercicio4 {
 
     /**
      * Crea un método llamado "tirarDado", que admita un número que identifica el número de

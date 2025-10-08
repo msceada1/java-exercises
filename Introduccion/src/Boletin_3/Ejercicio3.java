@@ -2,7 +2,7 @@ package Boletin_3;
 
 import java.util.Scanner;
 
-public class Ejercicio_3 {
+public class Ejercicio3 {
 
     /*
     Realizar un programa que solicite una cantidad de números que van a

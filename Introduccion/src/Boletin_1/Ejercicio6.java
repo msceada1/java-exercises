@@ -2,7 +2,7 @@ package Boletin_1;
 
 import java.util.Scanner;
 
-public class Ejercicio_6 {
+public class Ejercicio6 {
 
     /*
     Realizar un programa que lea el número de alumnos que hay en una clase.

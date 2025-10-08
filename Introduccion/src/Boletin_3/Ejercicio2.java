@@ -2,7 +2,7 @@ package Boletin_3;
 
 import java.util.Scanner;
 
-public class Ejercicio_2 {
+public class Ejercicio2 {
 
     /*
     Realizar un programa que lea un número entero entre 0 y 10 y visualice su

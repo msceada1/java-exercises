@@ -2,7 +2,7 @@ package Boletin_3;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_10 {
+public class Ejercicio10 {
 
     /*
     Realizar un programa que solicite un número entero positivo o cero y

@@ -2,7 +2,7 @@ package Boletin_Refuerzo;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_1 {
+public class Ejercicio1 {
     /*
     Crea un programa que recoja de teclado dos números y los sume
      */

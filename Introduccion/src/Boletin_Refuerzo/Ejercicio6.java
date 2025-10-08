@@ -2,7 +2,7 @@ package Boletin_Refuerzo;
 
 import utils.MiEntradaSalida;
 
-public class Ejercicio_6 {
+public class Ejercicio6 {
 
     /**
      * Crea un programa que convierta un número de grados Celsius a Fahrenheit

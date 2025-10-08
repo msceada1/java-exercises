@@ -2,7 +2,7 @@ package Boletin_3;
 
 import java.util.Scanner;
 
-public class Ejercicio_6 {
+public class Ejercicio6 {
 
     /*
     Realizar un programa que lea dos números enteros cualesquiera numeroA
