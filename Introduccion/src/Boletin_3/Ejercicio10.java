@@ -13,7 +13,7 @@ public class Ejercicio10 {
     public static void main(String[] args) {
 
 
-        int numero = MiEntradaSalida.solicitarEnteroPositivo("Introduce un numero mayor o igual a 0");
+        int numero = MiEntradaSalida.leerEnteroPositivo("Introduce un numero mayor o igual a 0");
         int acumulador = 1;
 
         if (numero == 0) {

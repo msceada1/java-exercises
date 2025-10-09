@@ -13,8 +13,8 @@ public class Ejercicio2 {
     public static void main(String[] args) {
 
         //definicion de variables
-        int base = MiEntradaSalida.solicitarEntero("Introduce la base");
-        int exponente = MiEntradaSalida.solicitarEntero("Introduce el exponente");
+        int base = MiEntradaSalida.leerEntero("Introduce la base");
+        int exponente = MiEntradaSalida.leerEntero("Introduce el exponente");
         int acumulador = 1;
 
         //procesamiento

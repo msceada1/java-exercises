@@ -12,7 +12,7 @@ public class Ejercicio5 {
     public static void main(String[] args) {
 
         //variables
-        int numero = MiEntradaSalida.solicitarEntero("introduce un numero entero positivo");
+        int numero = MiEntradaSalida.leerEntero("introduce un numero entero positivo");
         boolean primo = true;
 
         //procesamiento

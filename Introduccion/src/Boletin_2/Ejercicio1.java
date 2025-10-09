@@ -12,7 +12,7 @@ public class Ejercicio1 {
 
     public static void main(String[] args) {
 
-        int num = MiEntradaSalida.solicitarEnteroPositivo("Introduzca un numero entero positivo");
+        int num = MiEntradaSalida.leerEnteroPositivo("Introduzca un numero entero positivo");
         int reverso = 0;
 
         while (num > 0) {

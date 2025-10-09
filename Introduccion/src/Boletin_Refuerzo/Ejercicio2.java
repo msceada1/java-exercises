@@ -9,7 +9,7 @@ public class Ejercicio2 {
      */
     public static void main(String[] args) {
 
-        String numeroBinario = MiEntradaSalida.solicitarCadena("Introduce un numero Binario");
+        String numeroBinario = MiEntradaSalida.leerCadena("Introduce un numero Binario");
 
         System.out.println("el numero binario " + numeroBinario + " en decimal es " + Integer.parseInt(numeroBinario, 2));
     }

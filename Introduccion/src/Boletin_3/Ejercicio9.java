@@ -15,7 +15,7 @@ public class Ejercicio9 {
 
         boolean perfecto = false;
         int suma = 0;
-        int numero = MiEntradaSalida.solicitarEnteroPositivo("Introduce un numero positivo");
+        int numero = MiEntradaSalida.leerEnteroPositivo("Introduce un numero positivo");
 
         for (int i = 1; i <= numero / 2; i++) {
             if (numero % i == 0) {

@@ -7,7 +7,7 @@ public class Ejercicio2 {
     public static void main(String[] args) {
 
         //declaracion de variables
-        int numero = MiEntradaSalida.solicitarEntero("Introduzca un numero, negativo para terminar");
+        int numero = MiEntradaSalida.leerEntero("Introduzca un numero, negativo para terminar");
         int numeroMayor = numero, numeroMenor = numero;
         int contadorPositivos = 0, contadoPares = 0, contadorImpares = 0;
         int suma = numero;
@@ -35,7 +35,7 @@ public class Ejercicio2 {
                 System.out.println("el numero " + numero + " es multiplo de 3");
             }
             ultimoPositivo = numero;
-            numero = MiEntradaSalida.solicitarEntero("Introduzca un numero, negativo para terminar");
+            numero = MiEntradaSalida.leerEntero("Introduzca un numero, negativo para terminar");
             if (numero > 0) {
                 suma += numero;
             }

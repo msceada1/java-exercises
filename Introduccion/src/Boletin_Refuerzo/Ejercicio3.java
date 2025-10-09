@@ -10,7 +10,7 @@ public class Ejercicio3 {
 
     public static void main(String[] args) {
 
-        int numero = MiEntradaSalida.solicitarEntero("Introduce un numero");
+        int numero = MiEntradaSalida.leerEntero("Introduce un numero");
 
         System.out.println("el numero " + numero + " en binario es " + Integer.toBinaryString(numero));
     }

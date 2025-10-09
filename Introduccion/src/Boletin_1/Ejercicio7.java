@@ -13,8 +13,8 @@ public class Ejercicio7 {
     public static void main(String[] args) {
 
         //declaracion variables
-        int num1 = MiEntradaSalida.solicitarEnteroPositivo("Introduce un primer numero mayor que 0");
-        int num2 = MiEntradaSalida.solicitarEnteroPositivo("Introduzca un segundo numero mayor que 0");
+        int num1 = MiEntradaSalida.leerEnteroPositivo("Introduce un primer numero mayor que 0");
+        int num2 = MiEntradaSalida.leerEnteroPositivo("Introduzca un segundo numero mayor que 0");
         int resto = num1 % num2;
 
 

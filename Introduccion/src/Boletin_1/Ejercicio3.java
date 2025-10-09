@@ -14,7 +14,7 @@ public class Ejercicio3 {
     public static void main(String[] args) {
 
         //definicion de variables
-        int num = MiEntradaSalida.solicitarEntero("Introduce un numero entero");
+        int num = MiEntradaSalida.leerEntero("Introduce un numero entero");
         int contadorCifras = 1; //inicializo contador en 1 para sumar la ultima cifra que no se incrementa en el while.
 
         //procesamiento

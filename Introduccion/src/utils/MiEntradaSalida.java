@@ -6,7 +6,7 @@ public class MiEntradaSalida {
 
     public static Scanner sc = new Scanner(System.in);
 
-    public static int solicitarEntero(String mensaje) {
+    public static int leerEntero(String mensaje) {
         // Variable que almacenará el entero introducido por teclado.
         int integer = 0;
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.
@@ -29,7 +29,7 @@ public class MiEntradaSalida {
         return integer;
     }
 
-    public static int solicitarEnteroPositivo(String mensaje) {
+    public static int leerEnteroPositivo(String mensaje) {
         // Variable que almacenará el entero introducido por teclado.
         int integer = 0;
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.
@@ -55,7 +55,7 @@ public class MiEntradaSalida {
         return integer;
     }
 
-    public static int solicitarEnteroEnRango(String mensaje, int limiteInferior, int limiteSuperior) {
+    public static int leerEnteroEnRango(String mensaje, int limiteInferior, int limiteSuperior) {
         // Variable que almacenará el entero introducido por teclado.
         int integer = 0;
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.
@@ -81,7 +81,7 @@ public class MiEntradaSalida {
         return integer;
     }
 
-    public static char solicitarCaracter(String mensaje) {
+    public static char leerCaracter(String mensaje) {
         char c = '0';
 
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.
@@ -104,7 +104,7 @@ public class MiEntradaSalida {
         return c;
     }
 
-    public static char solicitarCaracterSN(String mensaje) {
+    public static char leerCaracterSN(String mensaje) {
         char c = '0';
 
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.
@@ -129,7 +129,7 @@ public class MiEntradaSalida {
         return c;
     }
 
-    public static String solicitarCadena(String mensaje) {
+    public static String leerCadena(String mensaje) {
         String cadena = "";
 
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.
@@ -150,7 +150,7 @@ public class MiEntradaSalida {
         return cadena;
     }
 
-    public static int seleccionarOpcion(String mensaje, String[] opciones) {
+    public static int leerOpcion(String mensaje, String[] opciones) {
 
         boolean flag = true;
         int opcionElegida = -1;
@@ -161,13 +161,13 @@ public class MiEntradaSalida {
 
                 System.out.printf("%d: %s\n", (i + 1), opciones[i]);
             }
-            opcionElegida = MiEntradaSalida.solicitarEnteroEnRango(mensaje, 1, opciones.length);
+            opcionElegida = MiEntradaSalida.leerEnteroEnRango(mensaje, 1, opciones.length);
             flag = false;
         }
         return opcionElegida;
     }
 
-    public static double solicitarDoublePositivo(String mensaje) {
+    public static double leerDoublePositivo(String mensaje) {
         // Variable que almacenará el entero introducido por teclado.
         double numero = 0;
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.
@@ -192,7 +192,7 @@ public class MiEntradaSalida {
         return numero;
     }
 
-    public static int solicitarEnteroPositivoMayorQueCero(String mensaje) {
+    public static int leerEnteroPositivoMayorQueCero(String mensaje) {
         // Variable que almacenará el entero introducido por teclado.
         int integer = 1;
         // Variable que almacenará un booleano que indicará si se le debe volver a pedir el dato al usuario.

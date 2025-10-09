@@ -6,7 +6,7 @@ public class Ejercicio {
 
     public static void main(String[] args) {
 
-        int numero = MiEntradaSalida.solicitarEnteroPositivoMayorQueCero("Introduce un numero mayor que cero");
+        int numero = MiEntradaSalida.leerEnteroPositivoMayorQueCero("Introduce un numero mayor que cero");
         int acumulador = 0;
         int acumulaPares = 0;
         int acumulaImpares = 0;

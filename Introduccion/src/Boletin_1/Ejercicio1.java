@@ -12,9 +12,9 @@ public class Ejercicio1 {
     public static void main(String[] args) {
 
         //introduccion de datos
-        int num1 = MiEntradaSalida.solicitarEntero("Introduce el numero 1");
-        int num2 = MiEntradaSalida.solicitarEntero("Introduce el numero 2");
-        int num3 = MiEntradaSalida.solicitarEntero("Introduce el numero 3");
+        int num1 = MiEntradaSalida.leerEntero("Introduce el numero 1");
+        int num2 = MiEntradaSalida.leerEntero("Introduce el numero 2");
+        int num3 = MiEntradaSalida.leerEntero("Introduce el numero 3");
 
         //procesamiento
         if (num1 < num2 && num2 < num3) {

@@ -11,7 +11,7 @@ public class Ejercicio6 {
     public static void main(String[] args) {
 
         //definicion de variables
-        double gradosCelsius = MiEntradaSalida.solicitarDoublePositivo("Introduce los grados");
+        double gradosCelsius = MiEntradaSalida.leerDoublePositivo("Introduce los grados");
 
         double gradosFarenheit = (gradosCelsius * ((double) 9 / 5)) + 32;
         System.out.println("gradosFarenheit = " + gradosFarenheit);

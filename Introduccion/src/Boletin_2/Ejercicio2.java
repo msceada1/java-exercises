@@ -6,7 +6,7 @@ public class Ejercicio2 {
 
     public static void main(String[] args) {
 
-        int num = MiEntradaSalida.solicitarEnteroPositivo("Introduce un numero entero positivo");
+        int num = MiEntradaSalida.leerEnteroPositivo("Introduce un numero entero positivo");
         int reverso = 0;
         boolean capicua = false;
         int copia = num;
