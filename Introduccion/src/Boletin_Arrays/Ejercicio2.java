@@ -2,6 +2,11 @@ package Boletin_Arrays;
 
 import java.util.Arrays;
 
+/*
+Crea un programa que detecte cuántos números negativos hay en un array de
+enteros.
+ */
+
 public class Ejercicio2 {
 
     public static void main(String[] args) {

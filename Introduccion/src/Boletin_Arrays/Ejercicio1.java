@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 public class Ejercicio1 {
 
+    /*
+    Crea un programa que sume todas las posiciones pares de un array de enteros.
+     */
+
     public static void main(String[] args) {
 
         int[] array1 = {1, 2, 3, 4, 5, 6};
@@ -13,12 +17,16 @@ public class Ejercicio1 {
         System.out.println("la suma de las posiciones es " + sumaPosiciones(array1));
     }
 
+    /**
+     * @param array el array con el que se suma las posiciones pares
+     * @return la suma de las posiciones pares del array
+     */
     private static int sumaPosiciones(int[] array) {
 
         int resultado = 0;
 
         for (int i = 0; i < array.length; i += 2) {
-                resultado += array[i];
+            resultado += array[i];
         }
 
         return resultado;
