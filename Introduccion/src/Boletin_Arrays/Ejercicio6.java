@@ -29,7 +29,7 @@ public class Ejercicio6 {
         int[] arrayAleatorio = new int[5];
 
         for (int i = 0; i < arrayAleatorio.length; i++) {
-            int numRandom = (int) Math.random() * 10;
+            int numRandom = (int) (Math.random() * 10);
             arrayAleatorio[i] = numRandom;
         }
 
