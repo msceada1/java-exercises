@@ -41,7 +41,7 @@ public class Ejercicio4 {
      */
     private static void digitoFinal(int[] array) {
 
-        int[] contadores = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+        int[] contadores = new int[10];
 
         //preguntar el for al maestro.
         for (int i = 0; i < array.length; i++) {
@@ -76,8 +76,8 @@ public class Ejercicio4 {
         }
 
         for (int i = 0; i < contadores.length; i++) {
-            double porcentaje = sumaContadores / contadores[i];
-            System.out.println("el numero " + i + " se repite " + contadores[i] + " veces " + " y equivale a un " + porcentaje + " % del total");
+            double porcentaje = (double) sumaContadores / contadores[i];
+            System.out.printf("el numero %d se repite %d veces  y equivale a un %.02f%%%n del total", i, contadores[i], porcentaje);
         }
     }
 

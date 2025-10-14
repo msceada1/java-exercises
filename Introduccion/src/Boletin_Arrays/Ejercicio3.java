@@ -26,7 +26,6 @@ public class Ejercicio3 {
         System.out.println(numeroMayor(array));
         System.out.println(numeroMenor(array));
         System.out.println("La media es " + media(array, cantidad));
-        
     }
 
     /**
