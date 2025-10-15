@@ -14,6 +14,11 @@ public class Ejercicio9 {
         System.out.println(Arrays.toString(arrayOrdenado(array, opcion)));
     }
 
+    /**
+     * @param array  el array con el que se trabaja
+     * @param opcion la orden que introduce el usuario
+     * @return el array ordenado
+     */
     private static int[] arrayOrdenado(int[] array, int opcion) {
 
         if (opcion == 1) {
