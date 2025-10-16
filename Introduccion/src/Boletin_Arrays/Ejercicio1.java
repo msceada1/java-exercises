@@ -18,6 +18,10 @@ public class Ejercicio1 {
     }
 
     /**
+     * Metodo para suma todas ls posiciones que hay dentro de un array, recorriendo con un bucle for, utilizando
+     * una variable resultado que va a guardar el valor del array en la posicion [i], y va a sumarse por cada iteracion
+     * para las posiciones pares
+     *
      * @param array el array con el que se suma las posiciones pares
      * @return la suma de las posiciones pares del array
      */

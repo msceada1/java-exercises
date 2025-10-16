@@ -19,6 +19,8 @@ public class Ejercicio2 {
     }
 
     /**
+     * Metodo que cuenta los numeros negativos que hay dentro de las posiciones del array.
+     *
      * @param array el array para comprobar
      * @return contador de numeros negativos que tiene el array
      */
