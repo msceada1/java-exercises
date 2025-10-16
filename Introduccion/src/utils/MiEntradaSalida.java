@@ -214,8 +214,36 @@ public class MiEntradaSalida {
                 System.out.println("Ha introducido un dato incorrecto.");
             }
         }
-
         return integer;
+    }
+
+    /**
+     * Generar un número aleatorio determinado por un máximo
+     *
+     * @param max hasta que número se va a generar
+     * @return número generado aleatoriamente
+     */
+    public static int generaAleatorio(int max) {
+        return (int) (Math.random() * max + 1);
+    }
+
+    /**
+     * Generar un número aleatorio entre un máximo y un mínimo
+     *
+     * @param min              Primer número del intervalo
+     * @param max              Segundo número del intervalo
+     * @param seAceptaElMaximo ¿El máximo entra en ese intervalo?
+     * @return El número genrado aleatoriamente
+     */
+    public static int generaAleatorioEntre(int min, int max, boolean seAceptaElMaximo) {
+        int ventana;
+
+        if (seAceptaElMaximo) {
+            ventana = max - min + 1;
+        } else {
+            ventana = max - min;
+        }
+        return (int) (Math.random() * ventana) + min;
     }
 }
 
