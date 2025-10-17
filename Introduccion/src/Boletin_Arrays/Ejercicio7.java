@@ -26,7 +26,7 @@ public class Ejercicio7 {
     }
 
     /**
-     * @param array el array que el usuario introduce
+     * @param array           el array que el usuario introduce
      * @param elementoBuscado el elemento que el usuario desea encontrar
      * @return true si esta el elemento buscado, false si no esta
      */
@@ -37,6 +37,7 @@ public class Ejercicio7 {
                 return true;
             }
         }
+
         return false;
     }
 

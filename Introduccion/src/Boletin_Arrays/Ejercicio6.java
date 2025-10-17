@@ -2,6 +2,8 @@ package Boletin_Arrays;
 
 import utils.MiEntradaSalida;
 
+import java.util.Arrays;
+
 public class Ejercicio6 {
 
     /*
@@ -21,11 +23,16 @@ public class Ejercicio6 {
             array[i] = numero;
         }
 
+        System.out.println("el array es " + Arrays.toString(array));
+
         int elementoABuscar = MiEntradaSalida.leerEntero("Introduce el numero que deseas buscar");
 
         System.out.println(contieneValor(tamanio, array, elementoABuscar));
 
         //Para aleatorio
+
+        System.out.println("-------------para el metodo aleatorio ------------------");
+
         int[] arrayAleatorio = new int[5];
 
         for (int i = 0; i < arrayAleatorio.length; i++) {
@@ -33,14 +40,16 @@ public class Ejercicio6 {
             arrayAleatorio[i] = numRandom;
         }
 
-        int numero2 =  MiEntradaSalida.leerEntero("Introduce el numero a buscar");
+        System.out.println("el array es " + Arrays.toString(arrayAleatorio));
+
+        int numero2 = MiEntradaSalida.leerEntero("Introduce el numero a buscar");
 
         System.out.println(contieneValorAleatorio(arrayAleatorio, numero2));
     }
 
     /**
-     * @param tamanioArray las posiciones que tendra el array
-     * @param elementos los valores que hay dentro del array
+     * @param tamanioArray  las posiciones que tendra el array
+     * @param elementos     los valores que hay dentro del array
      * @param numeroBuscado el numero que se busca en el array
      * @return si el elemento ha sido encontrado o no
      */
@@ -62,7 +71,7 @@ public class Ejercicio6 {
     }
 
     /**
-     * @param array el array que se analiza
+     * @param array           el array que se analiza
      * @param elementoBuscado el elemento que se busca en el array
      * @return true si el elemento esta dentro del array o false si no esta
      */

@@ -3,12 +3,17 @@ package Boletin_Arrays;
 import java.util.Arrays;
 
 public class Ejercicio10 {
-
+/*
     public static void main(String[] args) {
 
         int[] array = {1, 1, 2, 3, 4, 5, 3, 6, 6, 7, 8, 8, 9, 11, 11, 11};
-        System.out.println(Arrays.toString(eliminaDuplicados(array)));
+
+        System.out.println("el array es " + Arrays.toString(array));
+
+        System.out.println("el array sin duplicados es " + Arrays.toString(eliminaDuplicados(array)));
     }
+
+ */
 
     /**
      * Metodo para eliminar los elementos duplicados de un array. Creamos un array copia igual que el original.
@@ -18,7 +23,38 @@ public class Ejercicio10 {
      * @param array El array que se analiza
      * @return el array sin elementos duplicados.
      */
+    /*
     private static int[] eliminaDuplicados(int[] array) {
+
+        int[] arraySinDuplicados = new int[array.length];
+        int posArraySinDuplicados = 0;
+        boolean heTratadoElCero = false;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0 && !heTratadoElCero){
+                posArraySinDuplicados++;
+                heTratadoElCero = true;
+                continue;
+            }
+            if (!contieneElemento(arraySinDuplicados, array[i])){
+                arraySinDuplicados[posArraySinDuplicados++] = array[i];
+            }
+        }
+
+    }
+
+     */
+    private static boolean contieneElemento(int[] array, int elem) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == elem) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /*
+     private static int[] eliminaDuplicados(int[] array) {
 
         int[] arraySinDuplicados = new int[array.length];
         int[] arrayCopia = array;
@@ -37,4 +73,6 @@ public class Ejercicio10 {
 
         return arraySinDuplicados;
     }
+     */
+
 }
