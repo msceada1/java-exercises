@@ -23,7 +23,7 @@ public class Ejercicio10 {
      * @param array El array que se analiza
      * @return el array sin elementos duplicados.
      */
-    /*
+    /* esta es la solucion que me ha dado bermudo, falta copiar el array en uno mas chico
     private static int[] eliminaDuplicados(int[] array) {
 
         int[] arraySinDuplicados = new int[array.length];
@@ -53,7 +53,7 @@ public class Ejercicio10 {
         return false;
     }
 
-    /*
+    /* esta fue la solucion que se me ocurrio a mi
      private static int[] eliminaDuplicados(int[] array) {
 
         int[] arraySinDuplicados = new int[array.length];
