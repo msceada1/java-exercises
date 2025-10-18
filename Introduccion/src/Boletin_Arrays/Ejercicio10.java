@@ -3,17 +3,55 @@ package Boletin_Arrays;
 import java.util.Arrays;
 
 public class Ejercicio10 {
-/*
+
     public static void main(String[] args) {
 
-        int[] array = {1, 1, 2, 3, 4, 5, 3, 6, 6, 7, 8, 8, 9, 11, 11, 11};
+        int[] array = {1, 1, 2, 0, 3, 4, 5, 3, 6, 6, 0, 7, 8, 8, 9, 11, 11, 11};
 
         System.out.println("el array es " + Arrays.toString(array));
 
         System.out.println("el array sin duplicados es " + Arrays.toString(eliminaDuplicados(array)));
     }
 
- */
+
+    private static int[] eliminaDuplicados(int[] array) {
+
+        int[] arraySinDuplicados = new int[array.length];
+        int posArraySinDuplicados = 0;
+        boolean heTratadoElCero = false;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0 && !heTratadoElCero) {
+                posArraySinDuplicados++;
+                heTratadoElCero = true;
+                continue;
+            }
+            if (!contieneElemento(arraySinDuplicados, array[i])) {
+                arraySinDuplicados[posArraySinDuplicados++] = array[i];
+            }
+        }
+
+        arraySinDuplicados = Arrays.copyOf(arraySinDuplicados, posArraySinDuplicados);
+
+        return arraySinDuplicados;
+    }
+
+    /**
+     * Comprueba si un elemento entero está contenido dentro de un array de enteros.
+     * Itera sobre el array y compara cada elemento con el valor buscado.
+     *
+     * @param array    El array de enteros a ser examinado. No debe ser {@code null}.
+     * @param elemento El elemento entero a buscar dentro del array.
+     * @return {@code true} si el elemento se encuentra en el array; {@code false} en caso contrario.
+     */
+    private static boolean contieneElemento(int[] array, int elemento) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == elemento) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     /**
      * Metodo para eliminar los elementos duplicados de un array. Creamos un array copia igual que el original.
@@ -23,36 +61,6 @@ public class Ejercicio10 {
      * @param array El array que se analiza
      * @return el array sin elementos duplicados.
      */
-    /* esta es la solucion que me ha dado bermudo, falta copiar el array en uno mas chico
-    private static int[] eliminaDuplicados(int[] array) {
-
-        int[] arraySinDuplicados = new int[array.length];
-        int posArraySinDuplicados = 0;
-        boolean heTratadoElCero = false;
-
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0 && !heTratadoElCero){
-                posArraySinDuplicados++;
-                heTratadoElCero = true;
-                continue;
-            }
-            if (!contieneElemento(arraySinDuplicados, array[i])){
-                arraySinDuplicados[posArraySinDuplicados++] = array[i];
-            }
-        }
-
-    }
-
-     */
-    private static boolean contieneElemento(int[] array, int elem) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == elem) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     /* esta fue la solucion que se me ocurrio a mi
      private static int[] eliminaDuplicados(int[] array) {
 
