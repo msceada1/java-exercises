@@ -11,41 +11,48 @@ public class Ejercicio11 {
 
     public static void main(String[] args) {
 
-        int[] array1 = {1, 2, 3, 3, 2, 1, 7, 7, 4, 5, 7, 4, 14};
-        int[] array2 = {4, 5, 2, 10, 12, 6, 7, 2, 5, 6, 12, 16};
+        int[] array1 = {1, 2, 1, 3, 3, 5, 6, 2, 9, 5, 6};
+        int[] array2 = {4, 2, 5, 9, 1, 4, 6, 2, 10, 4, 7};
 
-        System.out.println(Arrays.toString(devuelveElementosComunes(array1, array2)));
-
-
+        System.out.println(Arrays.toString(arrayComun(array1, array2)));
     }
 
-    /**
-     * Metodo que devuelve un array con los elementos combinados
-     *
-     * @param array1 el array con el que se trabaja
-     * @param array2 el segundo array con el que se trabaja.
-     * @return el array con los elementos comunes.
-     */
-    private static int[] devuelveElementosComunes(int[] array1, int[] array2) {
-
-        int[] arrayComun = new int[15];
-        int contadorComunes = 0;
+    private static boolean posicionComun(int[] array1, int[] array2) {
 
         for (int i = 0; i < array1.length; i++) {
-            boolean comun = false;
             for (int j = 0; j < array2.length; j++) {
                 if (array1[i] == array2[j]) {
-                    comun = true;
-                    contadorComunes++;
+                    return true;
                 }
-            }
-            if (comun) {
-                arrayComun[i] = array1[i];
             }
         }
 
-        return arrayComun;
+        return false;
     }
 
+    private static boolean contieneElemento(int[] array, int elemento) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == elemento) {
+                return true;
+            }
+        }
 
+        return false;
+    }
+
+    private static int[] arrayComun(int[] array1, int[] array2) {
+
+        int contador = 0;
+        int[] arrayFusion = new int[contador];
+
+        for (int i = 0; i < array1.length; i++) {
+            for (int j = 0; j < array2.length; j++) {
+                if (posicionComun(array1, array2)) {
+                    arrayFusion[contador++] = array1[i];
+                }
+            }
+        }
+
+        return Arrays.copyOf(arrayFusion, contador);
+    }
 }
