@@ -6,18 +6,30 @@ public class Ejercicio10 {
 
     public static void main(String[] args) {
 
-        int[] array = {1, 1, 2, 0, 3, 4, 5, 3, 6, 6, 0, 7, 8, 8, 9, 11, 11, 11};
+        int[] array = {0, 1, 1, 2, 0, 3, 4, 5, 3, 6, 6, 0, 7, 8, 8, 9, 11, 11, 11};
 
         System.out.println("el array es " + Arrays.toString(array));
 
         System.out.println("el array sin duplicados es " + Arrays.toString(eliminaDuplicados(array)));
     }
 
-
+    /**
+     * Elimina los elementos duplicados de un array de enteros.
+     * <p>
+     * Este método utiliza un enfoque de O(n^2), que es menos eficiente que usar un HashSet,
+     * pero logra el objetivo sin utilizar estructuras de datos de la librería Collections de Java.
+     * Mantiene el orden de la primera aparición de cada elemento.
+     *
+     * @param array El array de enteros del cual se eliminarán los duplicados.
+     *              No debe ser {@code null}.
+     * @return Un nuevo array de enteros que contiene solo los elementos únicos
+     * del array de entrada, manteniendo su orden de primera aparición.
+     */
     private static int[] eliminaDuplicados(int[] array) {
-
         int[] arraySinDuplicados = new int[array.length];
+
         int posArraySinDuplicados = 0;
+
         boolean heTratadoElCero = false;
 
         for (int i = 0; i < array.length; i++) {
