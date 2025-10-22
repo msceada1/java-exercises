@@ -32,5 +32,4 @@ public class Ejercicio12 {
 
         return array;
     }
-
 }
