@@ -31,7 +31,7 @@ public class Ejercicio4 {
 
         for (int i = matriz.length - 1; i >= 0; i--) {
             for (int j = matriz[i].length - 1; j >= 0; j--) { //matriz[i].length para que me recorra hasta el lenght de las filas [i]
-                System.out.print(matriz[i][j]);
+                System.out.print(matriz[i][j] + " ");
             }
         }
     }
