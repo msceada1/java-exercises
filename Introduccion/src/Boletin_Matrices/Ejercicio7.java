@@ -26,11 +26,18 @@ public class Ejercicio7 {
      */
     private static boolean tieneMismasDimensiones(int[][] matriz1, int[][] matriz2) {
 
-        if (matriz1.length == matriz2.length && matriz1[0].length == matriz2[0].length) {
-            return true;
+        if (matriz1.length != matriz2.length) {
+            return false;
         }
 
-        return false;
+        for (int i = 0; i < matriz1.length; i++) {
+            if (matriz1[i] != matriz2[i]) {
+                return false;
+            }
+        }
+
+        return true;
+
     }
 
     /**
